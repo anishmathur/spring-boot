@@ -73,9 +73,9 @@ public class ApplicationHome {
 
 	private File findSource(URL location) throws IOException {
 		URLConnection connection = location.openConnection();
-		if (connection instanceof JarURLConnection) {
+		/*if (connection instanceof JarURLConnection) {
 			return new File(((JarURLConnection) connection).getJarFile().getName());
-		}
+		}*/
 		return new File(location.getPath());
 	}
 
